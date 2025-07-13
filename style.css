@@ -1,0 +1,339 @@
+@font-face {
+  font-family: light;
+  src: url(./AeonikTRIAL-Light.otf);
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: light;
+}
+html,
+body {
+   height: 100%;
+   width: 100%;
+}
+
+body {
+  background-color: #141625;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1f2235;
+  padding: 30px;
+  border-radius: 15px;
+  width: 450px;
+  position: relative;
+  /* display: none; */
+}
+.heading-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.heading-row .contact-btn {
+  padding: 10px 16px;
+  background-color: #3183f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  position: absolute;
+  top: 0%;
+  right: 2%;
+  width: 30%;
+  transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #256ad5;
+}
+.contact-btn:hover:active {
+    scale: 0.97;
+}
+
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+h2 span {
+  color: #3183f5;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2d45;
+  color: white;
+  outline: none;
+}
+
+.name-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 10px;
+  top: 37px;
+  cursor: pointer;
+}
+
+.login-link {
+  font-size: 13px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.login-link a {
+  color: #3183f5;
+  text-decoration: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #3183f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+
+button:active{
+    scale: 0.97;
+}
+
+.TotalContact {
+  background-color: #1f2235;
+  padding: 40px;
+  border-radius: 15px;
+  width: 450px;
+  height: 400px;
+  position: relative;
+  overflow: auto;
+  display: none;
+}
+.TotalContact::-webkit-scrollbar {
+  width: 1px; 
+}
+.TotalContact .cancel {
+  position: absolute;
+  top: 5%;
+  right: 10px;
+  padding: 5px 8px;
+  background-color: #3183f5;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  height: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.TotalContact .cancel:hover {
+  background-color: #256ad5;
+}
+
+.TotalContact .cancel:active {
+  scale: 0.98;
+}
+.TotalContact h2{
+  position: absolute;
+  top: 5%;
+  font-size: 24px;
+}
+.contactDetail{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-top: 30px;
+}
+.contactDetail .contact {
+  height: 60px;
+  width: 100%;
+  background-color: #4378c3;
+  border-radius: 20px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  box-sizing: border-box;
+  
+}
+
+.contactDetail .contact .info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.contactDetail .contact .info h1 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.contactDetail .contact .info h6 {
+  font-size: 13px;
+  margin: 0;
+  color: #dcdcdc;
+}
+
+.contactDetail .contact .actions {
+  display: flex;
+  gap: 10px;
+}
+
+.contactDetail .contact .actions button {
+  padding: 5px 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 12px;
+  color: white;
+  height: 30px;
+}
+
+.contactDetail .contact .actions .edit {
+  background-color: #28a745;
+}
+
+.contactDetail .contact .actions .delete {
+  background-color: #dc3545;
+} 
+
+
+
+.edit-container {
+  background-color: #1f2235;
+  padding: 30px;
+  border-radius: 15px;
+  width: 450px;
+  display: none;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+h2 span {
+  color: #3183f5;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-group label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2d45;
+  color: white;
+  outline: none;
+}
+
+button {
+  padding: 12px;
+  background-color: #3183f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #256ad5;
+}
+
+button:active {
+  transform: scale(0.97);
+} 
+.button-group {
+    display: flex;
+    gap: 10px;
+  }
+
+  .button-group button {
+    flex: 1;
+  }
+
+  .cancel-btn {
+    background-color: #555b77;
+  }
+
+  .cancel-btn:hover {
+    background-color: #3e435c;
+  }
+
+.input-group .wrong {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 8px;
+  background-color: #3183f5;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  height: 25px;
+  transition: background-color 0.2s ease;
+}
+
+.TotalContact .wrong:hover {
+  background-color: #256ad5;
+}

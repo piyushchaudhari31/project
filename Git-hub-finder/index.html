@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-[#0a0f1a]">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GitHub User Finder</title>
+  <script src="https://cdn.tailwindcss.com/3.4.1"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+    * {
+      font-family: 'Inter', sans-serif;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-[#0a0f1a] flex items-center justify-center px-6 py-14">
+
+  <div
+    class="relative w-full max-w-3xl bg-[#0f172a]/60 border border-[#1e293b] backdrop-blur-xl rounded-3xl p-10 shadow-[0_0_40px_#0ea5e9aa] overflow-hidden">
+
+    <!-- HEADING -->
+    <h1 class="text-4xl sm:text-5xl font-extrabold text-white text-center mb-3 tracking-tight drop-shadow-md">
+      🚀 GitHub Finder
+    </h1>
+    <p class="text-center text-gray-400 text-sm sm:text-base mb-10 max-w-xl mx-auto">
+      Discover developers in style. Search any GitHub username with a UI that *slaps* 💅
+    </p>
+
+    <!-- SEARCH SECTION -->
+    <div class="flex flex-col sm:flex-row items-center gap-4 mb-10 relative z-10">
+      <input type="text" placeholder="Type a GitHub username..."
+        class="usernameinp w-full sm:flex-1 px-6 py-3 rounded-xl bg-[#1e293b] border border-[#334155] text-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition" />
+      <button type="button"
+        class="search w-full sm:w-auto px-8 py-3 bg-gradient-to-r from-cyan-500 via-blue-600 to-indigo-600 text-white font-bold rounded-xl shadow-lg hover:scale-[1.03] transition-all duration-300">
+        Search
+      </button>
+    </div>
+
+    <!-- RESULT CARD -->
+    <div
+      class="card flex flex-col sm:flex-row gap-6 items-center sm:items-start bg-[#1e293b]/60 border border-[#334155] rounded-2xl p-6 shadow-xl hover:shadow-cyan-500/30 transition relative z-10">
+
+      <!-- Placeholder for dynamic user data -->
+      <!-- Add content dynamically via JS -->
+    </div>
+
+    <!-- FOOTER (optional) -->
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

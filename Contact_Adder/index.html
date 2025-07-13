@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  <link rel="shortcut icon" href="contact.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+    <div class="heading-row">
+      <h2>New <span>Account.</span></h2>
+      <button type="button" class="contact-btn">Contact Detail</button>
+    </div>
+
+    <form>
+      <div class="name-group">
+        <div class="input-group">
+          <label>First Name</label>
+          <input type="text" oninput="this.value = this.value.replace(/[^a-zA-Z\\s]/g, '')" placeholder="first_name"
+            class="first" required>
+        </div>
+        <div class="input-group">
+          <label>Last Name</label>
+          <input type="text" oninput="this.value = this.value.replace(/[^a-zA-Z\\s]/g, '')" placeholder="Last_name"
+            class="last" required>
+        </div>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="abc@gmail.com" class="email">
+      </div>
+
+      <div class="input-group phone">
+        <label>Phone-Number</label>
+        <input type="tel" oninput ="this.value=this.value.replace(/[^0-9]/g, '')" pattern="[0-9]{10}" maxlength="10" placeholder="Enter a Number" required>
+      </div>
+
+      <button type="submit">Add number</button>
+    </form>
+
+  </div>
+  <div class="TotalContact">
+    <h2>Contact <span>Detail</span></h2>
+    <div class="cancel">
+      <i class="fa-solid fa-xmark"></i>
+    </div>
+    <div class="contactDetail">
+
+    </div>
+  </div>
+
+  <div class="edit-container">
+    <h2>Edit <span>Contact</span></h2>
+    
+    <form id="editForm">
+
+      
+    </form>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
